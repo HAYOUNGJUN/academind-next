@@ -13,13 +13,13 @@ const createPostSchema = z.object({
   content: z.string().min(10),
 });
 
-interface CreatePostFormState {
+type CreatePostFormState = {
   errors: {
     title?: string[];
     content?: string[];
     _form?: string[];
   };
-}
+};
 
 export async function createPost(
   slug: string,

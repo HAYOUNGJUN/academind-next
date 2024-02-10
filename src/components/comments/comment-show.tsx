@@ -3,10 +3,10 @@ import Image from 'next/image';
 import CommentCreateForm from '@/components/comments/comment-create-form';
 import { fetchCommentsByPostId } from '@/db/queries/comments';
 
-interface CommentShowProps {
+type CommentShowProps = {
   commentId: string;
   postId: string;
-}
+};
 
 export default async function CommentShow({
   commentId,

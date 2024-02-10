@@ -2,9 +2,9 @@ import type { PostWithData } from '@/db/queries/posts';
 import Link from 'next/link';
 import paths from '@/paths';
 
-interface PostListProps {
+type PostListProps = {
   fetchData: () => Promise<PostWithData[]>;
-}
+};
 
 // TODO: Get list of posts into this component somehow
 export default async function PostList({ fetchData }: PostListProps) {
